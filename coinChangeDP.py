@@ -2,7 +2,7 @@ import sys
 
 def getWays(n, c):
     # Complete this function
-    combinations=[0 for i in range(n+1)]
+    combinations=[0]*(n+1)
     combinations[0]=1
     
     for coin in c:
