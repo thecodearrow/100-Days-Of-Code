@@ -38,19 +38,21 @@ while(t!=0):
             elif(a[mid]<x and indexOf[x]>mid):
                 low=mid+1
                 swapLesserNo+=1 
-            elif(a[mid]<x and indexOf[x]<mid):
+            elif(a[mid]<x and indexOf[x]<mid): #FakeBS case 1
                 high=mid-1 
                 swapGreaterYes+=1 
             elif(a[mid]>x and indexOf[x]<mid):
                 swapGreaterNo+=1 
                 high=mid-1 
-            elif(a[mid]>x and indexOf[x]>mid):
+            elif(a[mid]>x and indexOf[x]>mid): #FakeBS case 2
                 swapLesserYes+=1
                 low=mid+1  
                 
             
-        neededswaps=max(swapLesserYes,swapGreaterYes)
+        neededswaps=max(swapLesserYes,swapGreaterYes) 
         ans=neededswaps
+
+        #not enough elements in pool required for swapping
         if((swapLesserYes>countlessthan[x]- swapLesserNo) or (swapGreaterYes>countgreaterthan[x]- swapGreaterNo)):
             ans=-1 
        
