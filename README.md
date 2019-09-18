@@ -1,3 +1,3 @@
 # 100-Days-Of-Code
 
-Contains solved problems from CodeChef, HackerRank, Codeforces, SPOJ etc. 
+Contains adhoc solved problems from CodeChef, HackerRank, Codeforces, SPOJ etc. 
